@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;900&display=swap");
+
+:root {
+  --accent-color: #7c3aed;
+  --bg-color: #f8fafc;
+  --text-color: #1e293b;
+  --input-bg: #ffffff;
+  --border-color: #e2e8f0;
+  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+body {
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: -0.025em;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 1.75rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+body {
+  background-color: white;
+}
+button a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+button {
+  display: inline-block;
+  padding: 12px 32px;
+
+  /* Typography */
+  font-family: sans-serif; /* Replace with your site's font */
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+
+  /* Aesthetics */
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 4px; /* Subtle rounded look, or use 0px for sharp edges */
+  cursor: pointer;
+
+  /* Smooth Animation */
+  transition: all 0.3s ease;
+}
+
+button :hover {
+  color: var(rgba(199, 149, 108, 0.884));
+}
+.navbar {
+  display: flex;
+  margin: 0;
+  list-style-type: none;
+  background-color: rgba(0, 0, 0, 0.918);
+  justify-content: center;
+  gap: 1rem;
+  flex-direction: row;
+  border: #ffffff;
+  box-shadow: 2px 2px 20px rgb(255, 255, 255);
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  transition: 0.3;
+}
+.navbar a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 8px;
+}
+.navbar li {
+  display: inline;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+.home-hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/images/Fixed.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 70vh;
+
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.hero-text {
+  color: white;
+  text-align: left;
+  padding-bottom: 19rem;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+}
+
+.front-img {
+  width: 400px;
+  max-width: 100%;
+  border-radius: 1rem;
+}
+.home-content {
+  padding: 2rem;
+}
+.class-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.card img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 1rem;
+  display: block;
+}
+.card-img {
+  transform: scale(1);
+  transition: transform 1.2s ease;
+}
+.card-img:hover {
+  transform: scale(1.05);
+}
+
+.hero-vid {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 2rem 5%;
+  overflow: hidden;
+  /* Add this to create a safe boundary for the layers */
+  isolation: isolate;
+}
+
+.vid-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0; /* Changed from -1 to 0 */
+}
+
+.content-overlay {
+  position: relative;
+  z-index: 10; /* Changed from 1 to 10 to ensure it stays on top */
+  color: #ffffff;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  color: #ffffff;
+}
+.footer-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+}
+
+.top-div h1 {
+  padding: 2rem;
+}
+
+.creator {
+  width: 300px;
+  height: auto;
+  background: fixed;
+  background-color: solid 2px black;
+  border-radius: 50%;
+}
+.creator-content {
+  padding: 2rem;
+}
+.creator-name {
+  padding-bottom: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-creator {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+  /* Scale down navbar text and spacing */
+  .navbar a {
+    font-size: 1.5rem;
+  }
+  .navbar li {
+    padding: 0.5rem;
+  }
+
+  /* Change from 3 columns to 1 column for the hero section */
+  .home-hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 3rem 5%;
+    gap: 2rem;
+  }
+
+  /* Center text and remove the huge padding that pushes content off-screen */
+  .hero-text {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  /* Allow cards to wrap onto multiple lines instead of squishing */
+  .card-container {
+    flex-wrap: wrap;
+  }
+}
+
+/* =========================================
+   Mobile/Cellphone Compatibility (Max-width: 480px)
+   ========================================= */
+@media screen and (max-width: 480px) {
+  /* Scale down headings for small screens */
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Stack navbar links vertically */
+  .navbar {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem 0;
+  }
+  .navbar a {
+    font-size: 1.25rem;
+  }
+  .navbar li {
+    padding: 0.25rem;
+  }
+
+  /* Ensure the hero image doesn't break the container width */
+  .front-img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Force cards into a single vertical column */
+  .card-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* Make card images fill the screen nicely while maintaining max width */
+  .card img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
