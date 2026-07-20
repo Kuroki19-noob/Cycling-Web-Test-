@@ -120,7 +120,7 @@ h1 {
 .home-hero {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./images/bgimg.jpg");
+    url("./images/Fixed.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -157,6 +157,7 @@ h1 {
   justify-content: center;
   align-items: center;
   text-align: center;
+  overflow: hidden;
 }
 
 .card-container {
@@ -256,6 +257,48 @@ h1 {
   flex-direction: row;
 }
 
+.brand-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  text-align: center;
+}
+
+.brand-card{
+  width: 300px;
+  height: 400px;
+  object-fit:cover;
+  display:block;
+}
+.brand-card img{
+  width:200px;
+  height:200px;
+}
+
+.brand-box{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.fixed-content{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:2rem;
+}
+.bikes-card{
+  border-radius: 2rem;
+  width:300px;
+  height:300px;
+  object-fit:cover;
+}
+
+
 @media screen and (max-width: 768px) {
   /* Scale down navbar text and spacing */
   .navbar a {
@@ -283,6 +326,19 @@ h1 {
   .card-container {
     flex-wrap: wrap;
   }
+}
+
+.home-content-2{
+  padding:4rem;
+  text-align:center
+}
+
+.image-container{
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 1rem;
+  display: block;
 }
 
 /* =========================================
