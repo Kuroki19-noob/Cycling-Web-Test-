@@ -120,7 +120,7 @@ h1 {
 .home-hero {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/images/Fixed.jpg");
+    url("./images/bgimg.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
